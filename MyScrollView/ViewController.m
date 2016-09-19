@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "MyScrollView.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet MyScrollView *myScrollView;
+@property (weak, nonatomic) IBOutlet UIView *scrollSubView;
 
 @end
 
@@ -17,6 +20,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self.myScrollView setPanGesture];
+    self.myScrollView.contentSize = CGSizeMake(self.view.frame.size.width, 750);
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+
 }
 
 
