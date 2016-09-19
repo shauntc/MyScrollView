@@ -20,8 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self.myScrollView setPanGesture];
-    self.myScrollView.contentSize = CGSizeMake(self.view.frame.size.width, 750);
+//    [self.myScrollView setPanGesture];
+    self.myScrollView.contentSize = CGSizeMake(self.view.frame.size.width + self.view.frame.size.width -100, 1300);
     
 }
 
